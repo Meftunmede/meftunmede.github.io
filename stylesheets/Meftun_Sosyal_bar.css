@@ -1,0 +1,54 @@
+.mefSocialBar_container{position:fixed;left:0;top:100px;width:34px;border:#dbdbdb solid 1px;border-radius:0 5px 5px 0;z-index:9999;}
+.mefSocialBar_container .mefSocialBar_wrap{position:relative;z-index:999;border:#fff solid 1px;background:#f4f4f4;min-height:34px;min-width:30px;border-radius:0 3px 3px 0;overflow:hidden;text-align:left;}
+#mefmed{display:none;}
+.mefSocialBar_container .mefSocialBar_arrow_down{position:absolute;bottom:-30px;left:5px;width:22px;height:22px;background:url(http://2.bp.blogspot.com/-6ENdTdEi8EU/UORq-lgRvbI/AAAAAAAAKsw/g2q4Ya4TZeU/s1600/arrows.png) 0 0 no-repeat;z-index:9999;}
+.mefSocialBar_container .mefSocialBar_arrow_up{position:absolute;top:-30px;left:5px;width:22px;height:22px;background:url(http://2.bp.blogspot.com/-6ENdTdEi8EU/UORq-lgRvbI/AAAAAAAAKsw/g2q4Ya4TZeU/s1600/arrows.png) 0 -22px no-repeat;z-index:9999;display:none;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon{border:0;width:24px;height:24px;position:relative;opacity:.69999998807907;}
+.mefSocialBar_container .mefSocialBar_wrap a{margin:5px 3px;}
+.mefSocialBar_container .mefSocialBar_caption{opacity:0;position:absolute;display:none;border:#dbdbdb solid 1px;}
+.mefSocialBar_container .mefSocialBar_caption span{color:#000;font-size:10px;font-family:Tahoma, Geneva, sans-serif;text-align:center;min-width:100px;background:#f4f4f4;border:#fff solid 1px;display:block;padding:5px 10px;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon:hover{opacity:1;}
+.mefSocialBar_container.right{left:auto;right:0;width:34px;border-radius:5px 0 0 5px;}
+.mefSocialBar_container.top{left:100px;top:0;height:35px;width:auto;border-radius:0 0 5px 5px;border-top:0;padding-bottom:1px;}
+.mefSocialBar_container.bottom{left:100px;top:auto;bottom:0;height:34px;width:auto;border-radius:5px 5px 0 0;}
+.mefSocialBar_container.top .mefSocialBar_icon,.mefSocialBar_container.bottom .mefSocialBar_icon{position:absolute;}
+.mefSocialBar_container.right .mefSocialBar_wrap{border-radius:3px 0 0 3px;}
+.mefSocialBar_container.top .mefSocialBar_wrap{border-radius:0 0 3px 3px;}
+.mefSocialBar_container.bottom .mefSocialBar_wrap{border-radius:3px 3px 0 0;}
+.mefSocialBar_container.top .mefSocialBar_arrow_down{right:-30px;top:5px;left:auto;bottom:auto;background-position:0 -66px!important;}
+.mefSocialBar_container.top .mefSocialBar_arrow_down:hover,.mefSocialBar_container.bottom .mefSocialBar_arrow_down:hover{background-position:-22px -66px!important;}
+.mefSocialBar_container.top .mefSocialBar_arrow_down:active,.mefSocialBar_container.bottom .mefSocialBar_arrow_down:active{background-position:-44px -66px!important;}
+.mefSocialBar_container.bottom .mefSocialBar_arrow_down{right:-30px;bottom:5px;left:auto;top:auto;background-position:0 -66px!important;}
+.mefSocialBar_container.top .mefSocialBar_arrow_up{left:-30px;top:5px;bottom:auto;background-position:0 -44px!important;}
+.mefSocialBar_container.bottom .mefSocialBar_arrow_up{left:-30px;bottom:5px;top:auto;background-position:0 -44px!important;}
+.mefSocialBar_container.top .mefSocialBar_arrow_up:hover,.mefSocialBar_container.bottom .mefSocialBar_arrow_up:hover{background-position:-22px -44px!important;}
+.mefSocialBar_container.top .mefSocialBar_arrow_up:active,.mefSocialBar_container.bottom .mefSocialBar_arrow_up:active{background-position:-44px -44px!important;}
+.mefSocialBar_container.top .mefSocialBar_wrap a,.mefSocialBar_container.bottom .mefSocialBar_wrap a{margin:5px;}
+.mefSocialBar_container.dark .mefSocialBar_wrap{border:#646464 solid 1px;background:#282828;}
+.mefSocialBar_container.dark .mefSocialBar_arrow_down{background:url(http://2.bp.blogspot.com/-AT2Y2T1kq_M/UORq22tcLBI/AAAAAAAAKso/xuJ7mhdI_bA/s1600/arrows_dark.png) 0 0 no-repeat;}
+.mefSocialBar_container.dark .mefSocialBar_arrow_up{background:url(http://2.bp.blogspot.com/-AT2Y2T1kq_M/UORq22tcLBI/AAAAAAAAKso/xuJ7mhdI_bA/s1600/arrows_dark.png) 0 -22px no-repeat;}
+.mefSocialBar_container.dark .mefSocialBar_caption span{color:#fff;background:#282828;border:#646464 solid 1px;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_twitter{background:url(http://2.bp.blogspot.com/-og_9hRysBzY/UORp9keM8uI/AAAAAAAAKsc/9TrL6LckQss/s1600/btn_twitter_24.png) 0 0 no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_facebook{background:url(http://3.bp.blogspot.com/-VpeD6zXJOMg/UORp3qZPp0I/AAAAAAAAKsU/Dj24hdMJdB8/s1600/btn_facebook_24.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_rss{background:url(http://3.bp.blogspot.com/-ngxZHiL2srU/UORpyPv2ZLI/AAAAAAAAKsM/v4VAOLSLLkg/s1600/btn_rss_24.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_google{background:url(http://2.bp.blogspot.com/-SLTGFCOtlXc/T3IsGVYgb5I/AAAAAAAATvQ/cZCd__-s1sI/s24/googleplus.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_youtube{background:url(http://1.bp.blogspot.com/-ZI-3uUOngus/ThG5vAj5n5I/AAAAAAAAKMA/6rxGRnbnQPY/s1600/youtube.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_stumbleupon{background:url(http://2.bp.blogspot.com/-aIUBw2DQM-U/UZI4alQ34XI/AAAAAAAAAFc/rDQg2E4kEzw/s1600/stumbleupon_small.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_reddit{background:url(http://1.bp.blogspot.com/-VhVpy2gtDLw/UU0aK0kzZEI/AAAAAAAAB_c/ee4Ifddfif0/s000/reddit_small.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_pinterest{background:url(http://3.bp.blogspot.com/-U064HI7xcL0/T5ASdllqYvI/AAAAAAAAe4k/AFog9GCRe5M/s400/pinterest.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_instagram{background:url(http://1.bp.blogspot.com/-Wc4KEVx10_Q/UTEEMfXkHLI/AAAAAAAAN9M/NDeUb-I6QEQ/s1600/instagram+%281.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_vk{background:url(http://3.bp.blogspot.com/-U-WJMcTKzEA/UqoQwY2DJyI/AAAAAAAAAIM/itv95GF7UkU/s1600/vk.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_linkedin{background:url(http://3.bp.blogspot.com/-GKfpi-sjywc/VErqDISBSCI/AAAAAAAAAYU/SHwyQ2t06ak/s1600/24x24-linkedin.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_tumblr{background:url(https://lh3.googleusercontent.com/-1nNI12ELG_k/UwisKfGaltI/AAAAAAAAALw/8HVUf17oVNU/s30-no/tumblr.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_xing{background:url(http://3.bp.blogspot.com/-pc8K-8B-hvw/Uy9XePIJifI/AAAAAAAANQQ/zRWvklLCfXE/s1600/xing.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_myspace{background:url(http://3.bp.blogspot.com/_slkvkHLh-0U/SrvSJ9bKixI/AAAAAAAAABQ/H1nlP9Noo_A/s200/MySpace-24x24.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_digg{background:url(http://4.bp.blogspot.com/-qAD4fZMdvgc/ThXSgoOiLlI/AAAAAAAAAA8/qi2Mk5HI2NY/s1600/digg-24x24.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_flickr{background:url(http://1.bp.blogspot.com/_JUg9QsmKp5s/TNtOgVGdKuI/AAAAAAAABlk/3wzfpf7qka4/s000/flickr.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_foursquare{background:url(https://lh4.googleusercontent.com/-GU0cjdhoZkY/TdsmqAJgO1I/AAAAAAAADb0/l9uOgEIzmvU/s800/footer-social-foursquare.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_vimeo{background:url(http://3.bp.blogspot.com/-kZ2dwqkivAQ/Uva9oWQEaII/AAAAAAAAASY/9hG2p4ZE6LM/s1600/Vimeo-icon+%25281%252924.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_wrap .mefSocialBar_icon_soundcloud{background:url(http://1.bp.blogspot.com/-p8EozPm4jww/UTxJwa-2U6I/AAAAAAAAAEI/n7G0F7niCR0/s1600/sc.png) no-repeat transparent;}
+.mefSocialBar_container .mefSocialBar_arrow_down:hover,.mefSocialBar_container.dark .mefSocialBar_arrow_down:hover{background-position:-22px 0;}
+.mefSocialBar_container .mefSocialBar_arrow_down:active,.mefSocialBar_container.dark .mefSocialBar_arrow_down:active{background-position:-44px 0;}
+.mefSocialBar_container .mefSocialBar_arrow_up:hover,.mefSocialBar_container.dark .mefSocialBar_arrow_up:hover{background-position:-22px -22px;}
+.mefSocialBar_container .mefSocialBar_arrow_up:active,.mefSocialBar_container.dark .mefSocialBar_arrow_up:active{background-position:-44px -22px;}
+.mefSocialBar_container.dark,.mefSocialBar_container.dark .mefSocialBar_caption{border:#000 solid 1px;}
