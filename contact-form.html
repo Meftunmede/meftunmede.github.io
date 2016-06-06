@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+<meta charset="utf-8" />
+<title>Contact Form - www.meftunmede.com</title>	
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Yanone+Kaffeesatz::latin,latin-ext' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); 
+</script>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(https://fonts.gstatic.com/s/yanonekaffeesatz/v7/YDAoLskQQ5MOAgvHUQCcLV83L2yn_om9bG0a6EHWBso.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(https://fonts.gstatic.com/s/yanonekaffeesatz/v7/YDAoLskQQ5MOAgvHUQCcLfGwxTS8d1Q9KiDNCMKLFUM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+body, div, h1,h2, form, fieldset, input, textarea, footer,p {
+	margin: 0; padding: 0; border: 0; outline: none;
+}
+form,fieldset,input,textarea,footer,p{border:0;outline:none;margin:0;padding:0;box-sizing:content-box;}
+p{text-shadow:0 1px 0 #fff;font-size:22px;font-family:'Yanone Kaffeesatz',sans-serif;font-weight:300;color: #000;}
+#wrap{width:100%;height:1000px;margin:0px;max-width: 530px;}
+#form_wrap{overflow:hidden;height:446px;position:relative;top:0;transition:all 1s .3s ease-in-out;}
+#form_wrap:before{content:"";position:absolute;bottom:128px;left:0;background:url(https://lh5.googleusercontent.com/-a6mNwhldghk/U-zsxUWOELI/AAAAAAAABAc/IR2HUdMUyMo/w530-h316-no/before.png);width:530px;height:316px;}
+#form_wrap:after{content:"";position:absolute;bottom:0;left:0;background:url(https://lh3.googleusercontent.com/-vm7ZqcDkpAk/U-zsxe3au0I/AAAAAAAABAg/WLk8G9QEzm4/w530-h260-no/after.png);width:530px;height:260px;}
+#form_wrap.hide:after,#form_wrap.hide:before{display:none;}
+#form_wrap:hover{height:896px;top:-200px;}
+#form_wrap:hover form{height:530px;}
+label{font-size:16px;font-family:'Yanone Kaffeesatz',sans-serif;font-weight: 400;color:#7C7873;line-height:25px;text-transform:uppercase;text-shadow:0 1px 0 #fff;margin:11px 20px 0 0;}
+input[type=text],textarea{font-family:'Yanone Kaffeesatz',sans-serif;font-size:18px;font-weight:400;color:#7c7873;background:none;width:380px;height:36px;border:#f8f5f1 solid 1px;border-radius:5px;box-shadow:0 0 1px #b3a895 inset;margin:0 0 10px;padding:0 2px 2px 8px;}
+textarea{height:80px;padding-top:5px;}
+textarea:focus,input[type=text]:focus{font-family:'Yanone Kaffeesatz',sans-serif;background:rgba(255,255,255,0.35);}
+.ss-form-button-submit[type=submit]{position:relative;font-family:'Yanone Kaffeesatz',sans-serif;font-size:24px;font-weight:400;color:#7c7873;text-shadow:0 1px 0 #CCC;width:100%;text-align:center;opacity:1;background:none;cursor:pointer;border-radius:3px;}
+#form_wrap:hover input[type=submit]{z-index:1;opacity:1;transition:opacity .5s 1.3s ease-in-out;}
+#form_wrap:hover input:hover[type=submit]{color:#435c70;}
+form{background:url(https://lh6.googleusercontent.com/-zaYCTfKggR4/U-zs0A4kguI/AAAAAAAABAo/LqPjwO_VMDg/s100-no/letter_bg.png) #f7f2ec;position:relative;top:200px;overflow:hidden;height:895px;width:400px;border:#fff solid 1px;border-radius:3px;box-shadow:0 0 3px #9d9d9d, 0 0 27px #fff inset;transition:all 1s .3s ease-in-out;margin:0 auto;padding:20px;}
+/* Responsive styles. */
+@media only screen and (max-width: 768px){
+#form_wrap:before,#form_wrap:after{display:none;visibility:hidden;}
+#form_wrap:hover{height:auto;top:0px;}
+#form_wrap:hover form {height:auto;}
+form,fieldset,input,textarea,footer,p{border:0;outline:none;margin:0;padding:0;box-sizing:content-box;}
+p{text-shadow:0 1px 0 #fff;font-size:21px;font-family:'Yanone Kaffeesatz',sans-serif;font-weight:300;color: #000;}
+#wrap{width: 100%;height:auto;margin: 0px;}
+#form_wrap{overflow:visible;height:530px;position:relative;top:0;transition:all 1s .3s ease-in-out;}
+label{font-size:16px;font-family:'Yanone Kaffeesatz',sans-serif;font-weight: 400;color:#7C7873;line-height:25px;text-transform:uppercase;text-shadow:0 1px 0 #fff;margin:11px 20px 0 0;}
+input[type=text],textarea{font-family:'Yanone Kaffeesatz',sans-serif;font-size:18px;font-weight:400;color:#7c7873;background:none;width:100%;max-width:380px;height:36px;border:#f8f5f1 solid 1px;border-radius:5px;box-shadow:0 0 1px #b3a895 inset;margin:0 0 10px;padding:0 2px 2px 8px;}
+textarea{height:80px;padding-top:5px;}
+textarea:focus,input[type=text]:focus{font-family:'Yanone Kaffeesatz',sans-serif;background:rgba(255,255,255,0.35);}
+.ss-form-button-submit[type=submit]{position:relative;font-family:'Yanone Kaffeesatz',sans-serif;font-size:24px;font-weight:400;color:#7c7873;text-shadow:0 1px 0 #CCC;width:100%;text-align:center;opacity:1;background:none;cursor:pointer;border-radius:3px;}
+#form_wrap:hover input[type=submit]{z-index:1;opacity:1;transition:opacity .5s 1.3s ease-in-out;}
+#form_wrap:hover input:hover[type=submit]{color:#435c70;}
+form{background:url(https://lh6.googleusercontent.com/-zaYCTfKggR4/U-zs0A4kguI/AAAAAAAABAo/LqPjwO_VMDg/s100-no/letter_bg.png) #f7f2ec;position:relative;top:0;overflow:visible;height:auto;width:100%;border:#fff solid 1px;border-radius:3px;box-shadow:0 0 3px #9d9d9d,0 0 27px #fff inset;transition:all 1s .3s ease-in-out;margin:0;padding:20px;max-width:400px;}
+}
+@media only screen and (max-width: 480px){
+#form_wrap:before,#form_wrap:after{display:none;visibility:hidden;}
+#form_wrap:hover{height:auto;top:0px;}
+#form_wrap:hover form {height:auto;}
+form,fieldset,input,textarea,footer,p{border:0;outline:none;margin:0;padding:0;box-sizing:content-box;}
+p{text-shadow:0 1px 0 #fff;font-size:21px;font-family:'Yanone Kaffeesatz',sans-serif;font-weight:300;color: #000;}
+#wrap{width: 100%;height:auto;margin: 0px;}
+#form_wrap{overflow:visible;height:530px;position:relative;top:0;transition:all 1s .3s ease-in-out;}
+label{font-size:16px;font-family:'Yanone Kaffeesatz',sans-serif;font-weight: 400;color:#7C7873;line-height:25px;text-transform:uppercase;text-shadow:0 1px 0 #fff;margin:11px 20px 0 0;}
+input[type=text],textarea{font-family:'Yanone Kaffeesatz',sans-serif;font-size:18px;font-weight:400;color:#7c7873;background:none;width:100%;max-width:380px;height:36px;border:#f8f5f1 solid 1px;border-radius:5px;box-shadow:0 0 1px #b3a895 inset;margin:0 0 10px;padding:0 2px 2px 8px;}
+textarea{height:80px;padding-top:5px;}
+textarea:focus,input[type=text]:focus{font-family:'Yanone Kaffeesatz',sans-serif;background:rgba(255,255,255,0.35);}
+.ss-form-button-submit[type=submit]{position:relative;font-family:'Yanone Kaffeesatz',sans-serif;font-size:24px;font-weight:400;color:#7c7873;text-shadow:0 1px 0 #CCC;width:100%;text-align:center;opacity:1;background:none;cursor:pointer;border-radius:3px;}
+#form_wrap:hover input[type=submit]{z-index:1;opacity:1;transition:opacity .5s 1.3s ease-in-out;}
+#form_wrap:hover input:hover[type=submit]{color:#435c70;}
+form{background:url(https://lh6.googleusercontent.com/-zaYCTfKggR4/U-zs0A4kguI/AAAAAAAABAo/LqPjwO_VMDg/s100-no/letter_bg.png) #f7f2ec;position:relative;top:0;overflow:visible;height:auto;width:100%;border:#fff solid 1px;border-radius:3px;box-shadow:0 0 3px #9d9d9d,0 0 27px #fff inset;transition:all 1s .3s ease-in-out;margin:0;padding:20px;max-width:317px;}
+}
+@media screen and (max-width:320px) {
+#form_wrap:before,#form_wrap:after{display:none;visibility:hidden;}
+#form_wrap:hover{height:auto;top:0px;}
+#form_wrap:hover form{height:auto;}
+form,fieldset,input,textarea,footer,p{border:0;outline:none;margin:0;padding:0;box-sizing:content-box;}
+p{text-shadow:0 1px 0 #fff;font-size:21px;font-family:'Yanone Kaffeesatz',sans-serif;font-weight:300;color: #000;}
+#wrap{width: 100%;height:auto;margin: 0px;}
+#form_wrap{overflow:visible;height:530px;position:relative;top:0;transition:all 1s .3s ease-in-out;}
+label{font-size:16px;font-family:'Yanone Kaffeesatz',sans-serif;font-weight: 400;color:#7C7873;line-height:25px;text-transform:uppercase;text-shadow:0 1px 0 #fff;margin:0px;}
+input[type=text],textarea{font-family:'Yanone Kaffeesatz',sans-serif;font-size:18px;font-weight:400;color:#7c7873;background:none;width:275px;max-width:100%;max-width:275px;height:36px;border:#f8f5f1 solid 1px;border-radius:5px;box-shadow:0 0 1px #b3a895 inset;margin:0px;padding:0 2px 2px 8px;}
+textarea{height:80px;padding-top:5px;width:275px;max-width:100%;}
+textarea:focus,input[type=text]:focus{font-family:'Yanone Kaffeesatz',sans-serif;background:rgba(255,255,255,0.35);}
+.ss-form-button-submit[type=submit]{position:relative;font-family:'Yanone Kaffeesatz',sans-serif;font-size:24px;font-weight:400;color:#7c7873;text-shadow:0 1px 0 #CCC;width:100%;text-align:center;opacity:1;background:none;cursor:pointer;border-radius:3px;}
+#form_wrap:hover input[type=submit]{z-index:1;opacity:1;transition:opacity .5s 1.3s ease-in-out;}
+#form_wrap:hover input:hover[type=submit]{color:#435c70;}
+form{background:url(https://lh6.googleusercontent.com/-zaYCTfKggR4/U-zs0A4kguI/AAAAAAAABAo/LqPjwO_VMDg/s100-no/letter_bg.png) #f7f2ec;position:relative;top:0;overflow:visible;height:auto;width:100%;border:#fff solid 1px;border-radius:3px;box-shadow:0 0 3px #9d9d9d,0 0 27px #fff inset;transition:all 1s .3s ease-in-out;margin:0;padding:20px;max-width:277px;}
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+<div id="form_wrap">
+<form action="https://docs.google.com/spreadsheet/formResponse?formkey=dDZORDVkOVhhVFViMVA3STNNbm1Ud2c6MQ&amp;ifq" class="ss-form" id="ss-form" method="post" target="_self">
+<p>Merhaba Meftun,</p>
+<label class="ss-q-title" for="entry_4">MESAJINIZ : *</label>
+<textarea class="ss-q-long" id="entry_4" name="entry.4.single"></textarea>
+<p>Saygılarımla,</p>
+<br> 
+<label class="ss-q-title" for="entry_0">İSİM: </label>
+<input class="ss-q-short" type="text" name="entry.0.single" value="" id="entry_0">
+<label class="ss-q-title" for="entry_1">E-MAIL: *</label>
+<input type="text" class="ss-q-short" id="entry_1" name="entry.1.single" value="">
+<label class="ss-q-title" for="entry_2">WEBSITE: </label>
+<input class="ss-q-short" id="entry_2" type="text" name="entry.2.single">
+<input class="ss-form-button-submit" name="submit" type="submit" value="Gönder">
+</form>
+</div>
+</div>
+</body>
+</html>
