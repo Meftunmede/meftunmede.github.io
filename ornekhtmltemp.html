@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>
+/*----------Style Kodları----------*/
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+background: #ffffff
+url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZL1l1NLrxrqtBFmKgLnD8ijoyXUomDEZ7t65tX4hkFyqBKGByJdIVdBbF3oA9fbEH-58gzLPuueQjiKwieUMtlwszEgWb0pxxy9uFLegURRJkqTq1RTt5wecR5g1wmRTIbqw84C5tjZN5Bcrb9AMD6Ls6bvBETatexARLedo42tvNgQ_omt_aqk5PGA/s1600/img01.jpg)
+repeat-x;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+font-size: 13px;
+color: #7f7772;
+}
+
+h1,
+h2,
+h3 {
+margin-bottom: 15px;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-weight: normal;
+color: #333333;
+}
+
+h1 {
+font-size: 197%;
+}
+
+h2 {
+font-size: 152%;
+}
+
+h3 {
+font-size: 100%;
+font-weight: bold;
+}
+
+p,
+ul,
+ol {
+margin-bottom: 15px;
+line-height: 1.6em;
+}
+
+ul,
+ol {
+margin-left: 2em;
+}
+
+blockquote {
+margin-left: 1em;
+padding-left: 1em;
+background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9BcMfe_c3ZvmDkqWWL6H6cyXOTpCih4QoERjYoCVW0KYAl_jaLnljkZrWQVrmn8jJklwKuu93B586qeJMmmhLVt2VT-TmSle9vWbZmnsBUPTCEY7xPa-Rb0HiucpiQ9nZOyDcAWXK9JWQs3p5euvBBprBraVyGQ_gbB-gXrr5CoVv16K6HWx4ns2Nog/s1600/img09.gif)
+repeat-y;
+font-style: italic;
+}
+
+a:link {
+color: #0aaafd;
+}
+
+a:hover,
+a:active {
+text-decoration: none;
+color: #ff6700;
+}
+
+a:visited {
+color: #7f7772;
+}
+
+img {
+border: none;
+}
+
+img.left {
+float: left;
+margin: 0 20px 0 0;
+}
+
+img.right {
+float: right;
+margin: 0 0 0 20px;
+}
+
+/* Menu */
+
+#menu {
+width: 770px;
+height: 105px;
+margin: 0 auto;
+}
+
+#menu ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+#menu li {
+display: block;
+float: left;
+width: 122px;
+height: 65px;
+padding: 40px 0 0 0;
+}
+
+#menu a {
+display: block;
+width: 122px;
+height: 32px;
+padding: 13px 0 0 0;
+background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPCuX8MxBQmQeXDqgGcklbDOTs-ziwVPSXRrFiK3pWsZQh_1Hz79OnG2pGYM6mOphudA5ot0q49wOYpQCrSN0xGEiGzaarIPTesSv4VviTmMGRYKrL25IqWQ-NjeGGMccFHPhKkVrZEWjWlP0Joi_IH9N9bFqCSKhrkXPt-KojM-V6vaxl1hxQFMqZ5w/s1600/img02.jpg)
+no-repeat;
+text-align: center;
+text-transform: uppercase;
+text-decoration: none;
+font-weight: bold;
+color: #ffffff;
+}
+
+#menu a:hover {
+background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhby5uckNAMvV34Pit1aAfnp3bI3cvZ8bjQdeN480SATyOaMq-hWvcxyXubUPbyT8nymg7FczYe6deLbahnKXbgM4Z8Rn-mZcOhlhhaqknvoWPEGq5FltvXFbkcVn4So0lRRwMzuFUGOOilZJk-NxynOEQdW-sulxPm3Kl5Zn3WcQ87fRKhutY3dO_FIg/s1600/img03.jpg);
+}
+
+#menu .active {
+padding-top: 35px;
+}
+
+#menu .active a {
+height: 37px;
+padding-top: 16px;
+background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYXLnM6z2pt39U6AsWvaile0-aIS-PLbAgqf_1xBSfcp0-E79ip1plX7Z7EDWV6HtPocIEuN1gp71YepNYQmFNf4fJC8tnFpr4-VHQdtHUzfj6jzD1uebsJ8drzliuYWb9zj6RNu3tTydT8YKmFjNZrMxrn4QzgQIdb_0fTb198KBunwXo59LBaPbUYg/s1600/img04.jpg);
+color: #327ebe;
+}
+
+#menu .active a:hover {
+background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYXLnM6z2pt39U6AsWvaile0-aIS-PLbAgqf_1xBSfcp0-E79ip1plX7Z7EDWV6HtPocIEuN1gp71YepNYQmFNf4fJC8tnFpr4-VHQdtHUzfj6jzD1uebsJ8drzliuYWb9zj6RNu3tTydT8YKmFjNZrMxrn4QzgQIdb_0fTb198KBunwXo59LBaPbUYg/s1600/img04.jpg);
+}
+
+/* Header */
+
+#header {
+width: 770px;
+height: 160px;
+margin: 0 auto;
+}
+
+/* Logo */
+
+#logo {
+float: left;
+width: 250px;
+height: 160px;
+background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid8jLeHLf_I8yrxXl6dspY638bZ07sxX8PExT0d14drQQH2Q6s-XVNyz6uabvVt0777xmXRel7x8Yc8eBu6S7DShXoZSr9ryCA2vmEqTRfUF8V4Qyk85Cl2zbip6zgN44JFOCr0OMej4hIgSGsQ0F38EezefAe-KTbJahsxxToA7f5_O6zb-2OQjBrpQ/s1600/img05.jpg)
+no-repeat;
+}
+
+#logo h1,
+#logo h2 {
+text-align: center;
+}
+
+#logo h1 {
+padding-top: 90px;
+background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglvYJrRdvBkocrTyls1NyquRM4AKxSlh_QAcsCBHIKcWSGqrnsWLKglEs812xWsCx3qbJprE6ZyXlp0lsKtJk0v7nNTZD-QQp4ZydIRQcFd5GDXvJMuq05ZS10j_Gp-7UouAovn_HNa197RobQygDJR4fLPHF4JZ0sFkpTY5pnDn34qArumuK5jBZbiQ/s1600/img07.jpg)
+no-repeat center center;
+letter-spacing: 8px;
+font-size: 197%;
+}
+
+#logo h2 {
+letter-spacing: 2px;
+font-size: 85%;
+}
+
+#logo a {
+text-transform: uppercase;
+text-decoration: none;
+color: #ffffff;
+}
+
+/* Banner */
+
+#banner {
+float: right;
+width: 520px;
+height: 160px;
+background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu80SjqHuABPolIS2qL3PITXopzTIbqkodQJgOLGi9B3eYpAqyM8Gc1rbluIg30jBqlTes7KF2zfQ5iZNRAMEvpxOXye-Ka-sIQrQO9mfqPA_rUZunR57Xc3dbT50dTaw-wH_JxZEysGdV5eonbmyXpldKWFkxbSND0_EwyA62ZVFag9lV8HcLlyRHrQ/s1600/img06.jpg)
+no-repeat;
+}
+
+#banner a {
+float: right;
+padding: 120px 20px 0 0;
+text-decoration: none;
+text-align: right;
+font-size: 136%;
+font-style: italic;
+color: #ffffff;
+}
+
+/* Page */
+
+#page {
+width: 760px;
+margin: 0 auto;
+padding: 20px 0 0 0;
+}
+
+/* Content */
+
+#content {
+float: right;
+width: 510px;
+}
+
+.post {
+margin-bottom: 20px;
+}
+
+.post .title {
+padding: 0 20px;
+}
+
+.post .story {
+padding: 0 20px;
+}
+
+.post .meta {
+padding: 5px 20px;
+background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9BcMfe_c3ZvmDkqWWL6H6cyXOTpCih4QoERjYoCVW0KYAl_jaLnljkZrWQVrmn8jJklwKuu93B586qeJMmmhLVt2VT-TmSle9vWbZmnsBUPTCEY7xPa-Rb0HiucpiQ9nZOyDcAWXK9JWQs3p5euvBBprBraVyGQ_gbB-gXrr5CoVv16K6HWx4ns2Nog/s1600/img09.gif)
+repeat-x;
+}
+
+.post .meta p {
+margin: 0;
+font-size: 77%;
+}
+
+.boxed .title {
+height: 32px;
+margin: 0;
+padding: 8px 0 0 20px;
+background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQHWzI8skt4gVQlVqaBVNKn416ZagAdJi3ZtAq560dFN7TPmDPbzWYqtgamo6J90zpxFA4bqpRboKRyf-qg_B5DbIPBelPbTEvg8ZLKtYPLNEg32EU7A6L44nJ7AOTB6nYmA_dWaIeBopGBu9x_INU3-U9-xb4Ob-VXb4mpBrFWYnkkmPiHueMXBCGMQ/s1600/img08.jpg)
+no-repeat;
+letter-spacing: -1px;
+color: #ff3300;
+}
+
+.boxed .story {
+padding: 20px;
+border: 1px solid #ff8d17;
+}
+
+.boxed .meta {
+padding: 5px 10px;
+background: #ff8d17;
+color: #ffffff;
+}
+
+.boxed .meta a {
+color: #ffffff;
+}
+
+/* Sidebar */
+
+#sidebar {
+float: left;
+width: 240px;
+}
+
+#sidebar ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+#sidebar li {
+margin-bottom: 15px;
+}
+
+#sidebar li ul {
+padding: 10px;
+border: 1px solid #0aaafd;
+border-top: none;
+}
+
+#sidebar li li {
+margin: 0;
+padding: 3px 0;
+background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9BcMfe_c3ZvmDkqWWL6H6cyXOTpCih4QoERjYoCVW0KYAl_jaLnljkZrWQVrmn8jJklwKuu93B586qeJMmmhLVt2VT-TmSle9vWbZmnsBUPTCEY7xPa-Rb0HiucpiQ9nZOyDcAWXK9JWQs3p5euvBBprBraVyGQ_gbB-gXrr5CoVv16K6HWx4ns2Nog/s1600/img09.gif)
+repeat-x;
+}
+
+#sidebar li li.first {
+background: none;
+}
+
+#sidebar li h2 {
+height: 30px;
+margin: 0;
+padding: 10px 0 0 15px;
+background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAubtumFFN0lvHxeZX2QZ-ANA7iX8XVxq5gTQ8KR-tHJVX9HC2DxrIISLqBdjd2GlGOgYuRddQL3GmrvzS3Sqy67HKOQb7EnXqcNyaM3d09Ff39zMNpoTeLjxzvncLi6_yN-Lm0vaalP5WG1BTa8wv1qL9mXPV1VvEiyiNVUxELqLkTsXWvQUZQaMqyg/s1600/img10.jpg)
+no-repeat;
+letter-spacing: -1px;
+color: #327ebe;
+}
+
+#sidebar a:link {
+text-decoration: none;
+}
+
+#sidebar a:hover {
+text-decoration: underline;
+}
+
+#sidebar li a {
+padding-left: 10px;
+background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy2ewH5JPUMO3F0vgwoWMeN8qSyzQUldwr2JlILUVEn3zGOjYhWwMCT0XSXp31pspD_UTqvaJXLuOQm3Q3Ggym0yZCtAykYiDrA1Yw-HrjXzu0tMHIhmp5ONYv6s0uiz6aHdcdHPdi3Qe1IkSak3Hp38NQp43l0gPhL7pe_z9edAKGqhi0wUDgRQNsgA/s1600/img11.gif)
+no-repeat left center;
+}
+
+/* Footer */
+
+#footer {
+clear: both;
+height: 100px;
+padding: 15px 0;
+background: #d1d1d1;
+border-top: 5px solid #999999;
+text-align: center;
+}
+
+#footer p {
+margin: 0;
+color: #999999;
+}
+
+#footer a {
+color: #999999;
+}
+
+#footer a:hover {
+color: #ffffff;
+}
+</style>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>www.tasarimkodlama.com</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="menu">
+<ul>
+<li class="active"><a href="#" accesskey="1" title="">Anasayfa</a></li>
+<li><a href="#" accesskey="2" title="">Ürünler</a></li>
+<li><a href="#" accesskey="3" title="">Resimler</a></li>
+<li><a href="#" accesskey="4" title="">Referanslar</a></li>
+<li><a href="#" accesskey="5" title="">Hakkımızda</a></li>
+<li><a href="#" accesskey="6" title="">İletişim</a></li>
+</ul>
+</div>
+<!-- end #menu -->
+<div id="header">
+<div id="logo">
+<h1><a href="#">Aquaria</a></h1>
+<h2><a href="http://www.blogger.com/">HTML CSS Örnekleri</a></h2>
+</div>
+<div id="banner"><a href="#">Desteğiniz için çok teşekkür ederiz!</a></div>
+</div>
+<!-- end #header -->
+<div id="page">
+<div id="content">
+<div class="post">
+<h1 class="title">Hoşgeldiniz!</h1>
+<div class="story">
+<p>
+Word, belgenizin profesyonelce üretilmiş görünmesini sağlamak için birbirini tamamlayan üst bilgi, alt bilgi, kapak sayfası ve metin kutusu tasarımları sağlar. Örneğin, birbiriyle uyumlu bir kapak sayfası, başlık ve kenar çubuğu
+ekleyebilirsiniz.
+</p>
+</div>
+<div class="meta">
+<p class="date">Posted on February 22, 2007 by Admin</p>
+<p class="file">Filed under <a href="#">Uncategorized</a> | <a href="#">Edit</a> | <a href="#">28 Comments</a></p>
+</div>
+</div>
+<div class="post boxed">
+<h2 class="title">Örnekler</h2>
+<div class="story">
+<p>
+<strong></strong>Word, belgenizin profesyonelce üretilmiş görünmesini sağlamak için birbirini tamamlayan üst bilgi, alt bilgi, kapak sayfası ve metin kutusu tasarımları sağlar. Örneğin, birbiriyle uyumlu bir kapak sayfası, başlık ve kenar
+çubuğu ekleyebilirsiniz.
+</p>
+<blockquote>
+<p>
+Video, size görüşünüzü kanıtlamak için güçlü bir yol sunar. Çevrimiçi Video'ya tıkladığınızda, eklemek istediğiniz videoya ait ekleme kodunu yapıştırabilirsiniz. Belgenize en iyi uyan videoyu çevrimiçi olarak aramak için bir anahtar sözcük
+de yazabilirsiniz.
+</p>
+</blockquote>
+<h3>BAŞLIKLAR</h3>
+<p>Sırasız Listeler</p>
+<ul>
+<li>Liste Elemanı 1</li>
+<li></li>
+<li>Liste Elemanı 2</li>
+<li></li>
+<li>Liste Elemanı 3</li>
+<li></li>
+</ul>
+
+<p>Sıaralı Listeler</p>
+<ol>
+<li>Liste Elemanı 1</li>
+<li>Liste Elemanı 2</li>
+<li>Liste Elemanı 3</li>
+</ol>
+</div>
+<div class="meta">
+<p class="date">Posted on February 22, 2007 by Admin</p>
+<p class="file">Filed under <a href="#">Uncategorized</a> | <a href="#">Edit</a> | <a href="#">28 Comments</a></p>
+</div>
+</div>
+</div>
+<!-- end #content -->
+<div id="sidebar">
+<ul>
+<li>
+<h2>Archives</h2>
+<ul>
+<li class="first"><a href="#">Haziran</a> <i>(2)</i></li>
+<li><a href="#">Mayıs</a> <i>(31)</i></li>
+<li><a href="#">Nisan</a> <i>(30)</i></li>
+<li><a href="#">Mart</a> <i>(31)</i></li>
+<li><a href="#">Şubat</a> <i>(28)</i></li>
+<li><a href="#">Ocak</a> <i>(31)</i></li>
+</ul>
+</li>
+<li>
+<h2>Kategoriler</h2>
+<ul>
+<li class="first"><a href="#">Bilgisayar</a></li>
+<li><a href="#">İşlemciler</a></li>
+<li><a href="#">Anakartlar</a></li>
+<li><a href="#">Ekran Kartları</a></li>
+<li><a href="#">Yazıcılar</a></li>
+<li><a href="#">USB Bellekler</a></li>
+<li><a href="#">Sabit Diskler</a></li>
+</ul>
+</li>
+<li>
+<h2>Alt Kategoriler</h2>
+<ul>
+<li class="first"><a href="#">Bilgisayar</a></li>
+<li><a href="#">İşlemciler</a></li>
+<li><a href="#">Anakartlar</a></li>
+<li><a href="#">Ekran Kartları</a></li>
+<li><a href="#">Yazıcılar</a></li>
+<li><a href="#">USB Bellekler</a></li>
+<li><a href="#">Sabit Diskler</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- end #sidebar -->
+<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end #page -->
+<div id="footer">
+<p id="legal">Copyright &copy; 2012 Admin. Powered by <a href="http://www.blogger.com/">Blogger</a></p>
+<p id="links">
+<a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional"><abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a> |
+<a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS"><abbr title="Cascading Style Sheets">CSS</abbr></a>
+</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
