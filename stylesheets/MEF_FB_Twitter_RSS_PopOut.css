@@ -5,20 +5,20 @@
 #cboxLoadedContent{overflow:auto;margin-bottom:5px;}
 #cboxTitle{position:absolute;bottom:-25px;left:0;text-align:center;width:100%;font-weight:700;color:#7C7C7C;margin:0;}
 #cboxLoadingOverlay,#cboxLoadingGraphic{position:absolute;top:0;left:0;width:100%;}
-#cboxPrevious,#cboxNext,#cboxClose,#cboxSlideshow{cursor:pointer;position:absolute;bottom:-29px;background:url(http://lh5.googleusercontent.com/-MpInItMKAf8/TxnRtX7KF8I/AAAAAAAAB0U/Zo9ndaqo_RU/s225/controls.png) no-repeat 0 0;width:23px;height:23px;text-indent:-9999px;}
+#cboxPrevious,#cboxNext,#cboxClose,#cboxSlideshow{cursor:pointer;position:absolute;bottom:-29px;background:url(https://lh5.googleusercontent.com/-MpInItMKAf8/TxnRtX7KF8I/AAAAAAAAB0U/Zo9ndaqo_RU/s225/controls.png) no-repeat 0 0;width:23px;height:23px;text-indent:-9999px;}
 .cboxPhoto{float:left;border:0;display:block;margin:auto;}
 .cboxIframe{width:100%;height:100%;display:block;border:0;}
 #colorbox{box-shadow:0 0 15px rgba(0,0,0,0.4);-moz-box-shadow:0 0 15px rgba(0,0,0,0.4);-webkit-box-shadow:0 0 15px rgba(0,0,0,0.4);}
-#cboxTopLeft{width:14px;height:14px;background:url(http://lh5.googleusercontent.com/-MpInItMKAf8/TxnRtX7KF8I/AAAAAAAAB0U/Zo9ndaqo_RU/s225/controls.png) no-repeat 0 0;}
-#cboxTopCenter{height:14px;background:url(http://lh5.googleusercontent.com/-xYOj68OIaVc/TxnRtbnqRVI/AAAAAAAAB0Q/sPjBRXr1r3w/s75/border.png) repeat-x top left;}
-#cboxTopRight{width:14px;height:14px;background:url(http://lh5.googleusercontent.com/-MpInItMKAf8/TxnRtX7KF8I/AAAAAAAAB0U/Zo9ndaqo_RU/s225/controls.png) no-repeat -36px 0;}
-#cboxBottomLeft{width:14px;height:43px;background:url(http://lh5.googleusercontent.com/-MpInItMKAf8/TxnRtX7KF8I/AAAAAAAAB0U/Zo9ndaqo_RU/s225/controls.png) no-repeat 0 -32px;}
-#cboxBottomCenter{height:43px;background:url(http://lh5.googleusercontent.com/-xYOj68OIaVc/TxnRtbnqRVI/AAAAAAAAB0Q/sPjBRXr1r3w/s75/border.png) repeat-x bottom left;}
-#cboxBottomRight{width:14px;height:43px;background:url(http://lh5.googleusercontent.com/-MpInItMKAf8/TxnRtX7KF8I/AAAAAAAAB0U/Zo9ndaqo_RU/s225/controls.png) no-repeat -36px -32px;}
-#cboxMiddleLeft{width:14px;background:url(http://lh5.googleusercontent.com/-MpInItMKAf8/TxnRtX7KF8I/AAAAAAAAB0U/Zo9ndaqo_RU/s225/controls.png) repeat-y -175px 0;}
-#cboxMiddleRight{width:14px;background:url(http://lh5.googleusercontent.com/-MpInItMKAf8/TxnRtX7KF8I/AAAAAAAAB0U/Zo9ndaqo_RU/s225/controls.png) repeat-y -211px 0;}
-#cboxLoadingOverlay{background:url(http://lh6.googleusercontent.com/-F7czRqkqCDs/TxnciZUfheI/AAAAAAAAB04/OHlre0KMKZw/s128/loadingbackground.png) no-repeat center center;}
-#cboxLoadingGraphic{background:url(http://1.bp.blogspot.com/-vxPD826pL6E/UJgF9QO2yTI/AAAAAAAAHrE/-qnxhrhHZTI/s320/NBTloading.gif) no-repeat center center;}
+#cboxTopLeft{width:14px;height:14px;background:url(https://lh5.googleusercontent.com/-MpInItMKAf8/TxnRtX7KF8I/AAAAAAAAB0U/Zo9ndaqo_RU/s225/controls.png) no-repeat 0 0;}
+#cboxTopCenter{height:14px;background:url(https://lh5.googleusercontent.com/-xYOj68OIaVc/TxnRtbnqRVI/AAAAAAAAB0Q/sPjBRXr1r3w/s75/border.png) repeat-x top left;}
+#cboxTopRight{width:14px;height:14px;background:url(https://lh5.googleusercontent.com/-MpInItMKAf8/TxnRtX7KF8I/AAAAAAAAB0U/Zo9ndaqo_RU/s225/controls.png) no-repeat -36px 0;}
+#cboxBottomLeft{width:14px;height:43px;background:url(https://lh5.googleusercontent.com/-MpInItMKAf8/TxnRtX7KF8I/AAAAAAAAB0U/Zo9ndaqo_RU/s225/controls.png) no-repeat 0 -32px;}
+#cboxBottomCenter{height:43px;background:url(https://lh5.googleusercontent.com/-xYOj68OIaVc/TxnRtbnqRVI/AAAAAAAAB0Q/sPjBRXr1r3w/s75/border.png) repeat-x bottom left;}
+#cboxBottomRight{width:14px;height:43px;background:url(https://lh5.googleusercontent.com/-MpInItMKAf8/TxnRtX7KF8I/AAAAAAAAB0U/Zo9ndaqo_RU/s225/controls.png) no-repeat -36px -32px;}
+#cboxMiddleLeft{width:14px;background:url(https://lh5.googleusercontent.com/-MpInItMKAf8/TxnRtX7KF8I/AAAAAAAAB0U/Zo9ndaqo_RU/s225/controls.png) repeat-y -175px 0;}
+#cboxMiddleRight{width:14px;background:url(https://lh5.googleusercontent.com/-MpInItMKAf8/TxnRtX7KF8I/AAAAAAAAB0U/Zo9ndaqo_RU/s225/controls.png) repeat-y -211px 0;}
+#cboxLoadingOverlay{background:url(https://lh6.googleusercontent.com/-F7czRqkqCDs/TxnciZUfheI/AAAAAAAAB04/OHlre0KMKZw/s128/loadingbackground.png) no-repeat center center;}
+#cboxLoadingGraphic{background:url(https://1.bp.blogspot.com/-vxPD826pL6E/UJgF9QO2yTI/AAAAAAAAHrE/-qnxhrhHZTI/s320/NBTloading.gif) no-repeat center center;}
 #cboxCurrent{position:absolute;bottom:-25px;left:58px;font-weight:700;color:#7C7C7C;}
 #cboxPrevious{left:0;background-position:-51px -25px;}
 #cboxPrevious.hover{background-position:-51px 0;}
