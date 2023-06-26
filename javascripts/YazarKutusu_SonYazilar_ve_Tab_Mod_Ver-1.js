@@ -1,5 +1,5 @@
 // ----------------------------------------
-// YAZAR KUTUSU ÝÇÝN TAB MENÜ GÖSTER
+// YAZAR KUTUSU Ä°Ã‡Ä°N TAB MENÃœ GÃ–STER
 // ----------------------------------------
 // Mod by Meftun MEDE
 // www.meftunmede.com
@@ -7,7 +7,7 @@
 jQuery(document).ready(function(b){b(".meftunmede-yk-tabs > div").hide();b(".meftunmede-yk-tabs > div:first-child").show();b(".meftunmede-yk-list li:first-child").addClass("active");b(".meftunmede-yk-list li a").click(function(){b(this).closest(".meftunmede-yk-wrapper").find("li").removeClass("active");b(this).parent().addClass("active");var c=b(this).attr("href");-1!=c.indexOf("#")&&(currentTabExp=c.split("#"),c="#"+currentTabExp[1]);b(this).closest(".meftunmede-yk-wrapper").find(".meftunmede-yk-tabs > div").hide();
 b(c).show();return!1})});
 // ----------------------------------------
-// YAZAR KUTUSU ÝÇÝN SON YAZILARI GÖSTER
+// YAZAR KUTUSU Ä°Ã‡Ä°N SON YAZILARI GÃ–STER
 // ----------------------------------------
 // Mod by Meftun MEDE
 // www.meftunmede.com
